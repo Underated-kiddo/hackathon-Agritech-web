@@ -1,0 +1,120 @@
+/* Floating Chatbot Bubble and Chat Window */
+#chatbot-bubble {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 2000;
+    transition: background-color 0.2s;
+}
+#chatbot-bubble:hover {
+    background-color: brown;
+}
+#chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    left: 30px;
+    width: 320px;
+    max-width: 90vw;
+    background: white;
+    border-radius: 1em;
+    box-shadow: 0 2px 16px gray;
+    display: none;
+    flex-direction: column;
+    z-index: 2001;
+    overflow: hidden;
+}
+#chatbot-header {
+    background: green;
+    color: white;
+    padding: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#chatbot-close {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+#chatbot-messages {
+    padding: 1em;
+    height: 220px;
+    overflow-y: auto;
+    background: whitesmoke;
+    font-size: 1em;
+}
+#chatbot-input-area {
+    display: flex;
+    border-top: 1px solid #eee;
+    background: #fafafa;
+}
+#chatbot-input {
+    flex: 1;
+    border: none;
+    padding: 0.8em;
+    font-size: 1em;
+    border-radius: 0 0 0 1em;
+    outline: none;
+}
+#chatbot-send {
+    background: brown;
+    color: white;
+    border: none;
+    padding: 0 1.2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 0 0 1em 0;
+    transition: background 0.2s;
+}
+#chatbot-send:hover {
+    background: green;
+}
+.chatbot-message {
+    margin-bottom: 0.7em;
+}
+.chatbot-message.user {
+    text-align: right;
+    color: brown;
+}
+.chatbot-message.bot {
+    text-align: left;
+    color: green;
+}
+
+/* Dark Mode Styles */
+.dark-mode #chatbot-bubble {
+    background-color: #23272a;
+    color: #eafaf1;
+}
+.dark-mode #chatbot-bubble:hover {
+    background-color: #3a1a1a;
+}
+.dark-mode #chatbot-window {
+    background: #181a1b;
+    color: #eafaf1;
+    box-shadow: 0 2px 16px #222;
+}
+.dark-mode #chatbot-header {
+    background: #222e22;
+    color: #eafaf1;
+}
+.dark-mode #chatbot-messages {
+    background: #23272a;
+    color: #b6e7c9;
+}
+.dark-mode #chatbot-input {
+    background: #23272a;
+    color: #eafaf1;
+    border: 1px solid #b6e7c9;
+}

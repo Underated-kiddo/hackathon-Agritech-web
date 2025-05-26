@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Settings</title>
+    <style>
+        .content form {
+            background: white;
+            padding: 2em;
+            border-radius: 1em;
+            box-shadow: 0 0 10px gray;
+            max-width: 400px;
+            margin: 2em auto;
+        }
+        .content label {
+            color: green;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .content select, .content input {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border-radius: 0.5em;
+            border: 1px solid green;
+        }
+        .content button {
+            background: brown;
+            color: white;
+            border: none;
+            padding: 0.7em 2em;
+            border-radius: 0.5em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .content button:hover {
+            background: green;
+        }
+        .settings-section {
+            margin-top: 2em;
+            background: whitesmoke;
+            border-radius: 1em;
+            padding: 1.5em;
+            box-shadow: 0 0 8px gray;
+        }
+    </style>
+</head>
+<body>
+    <script src="darkmode-loader.js"></script>
+    <div class="dashboard">
+        <div class="topbar">
+            <div>Farm Tech Soln</div>
+            <div>Settings</div>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <a href="home.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="order_history.html">Order History</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="content">
+                <h2>Account Settings</h2>
+                <form id="settingsForm">
+                    <label for="appearance">Appearance:</label>
+                    <select id="appearance" name="appearance">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                    <label for="accountType">Account Type:</label>
+                    <select id="accountType" name="accountType">
+                        <option value="farmer">Farmer</option>
+                        <option value="buyer">Buyer</option>
+                        <option value="market">Local Market</option>
+                    </select>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678">
+                    <label for="password">Change Password:</label>
+                    <input type="password" id="password" name="password" placeholder="New password">
+                    <label for="notificationsToggle">Enable Notifications:</label>
+                    <select id="notificationsToggle" name="notificationsToggle">
+                        <option value="on">On</option>
+                        <option value="off">Off</option>
+                    </select>
+                    <button type="submit">Save Settings</button>
+                </form>
+                <div id="settingsMsg"></div>
+                <div class="settings-section">
+                    <h3>Other Settings</h3>
+                    <ul>
+                        <li>Privacy & Security</li>
+                        <li>Language Preferences</li>
+                        <li>Delete Account <button id="deleteAccountBtn">Request Deletion</button></li>
+                        <li>Export My Data <button id="exportDataBtn">Export</button></li>
+                    </ul>
+                    <form id="changePasswordForm" style="margin-top:1em;">
+                        <label for="oldPassword">Old Password:</label>
+                        <input type="password" id="oldPassword" name="oldPassword" required>
+                        <label for="newPassword">New Password:</label>
+                        <input type="password" id="newPassword" name="newPassword" required>
+                        <button type="submit">Change Password</button>
+                    </form>
+                    <div id="changePasswordMsg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="settings.js"></script>
+</body>
+</html>

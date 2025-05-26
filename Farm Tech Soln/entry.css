@@ -1,0 +1,19 @@
+.container {
+    background-color: green;
+    border-radius: 5%;
+    margin: 2%;
+    padding: 5%;
+}
+
+body {
+    background-color: cyan;
+}
+
+.dark-mode body {
+    background-color: #181a1b;
+    color: #eafaf1;
+}
+.dark-mode .container {
+    background-color: #222e22;
+    color: #eafaf1;
+}

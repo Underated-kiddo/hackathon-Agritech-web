@@ -1,0 +1,47 @@
+body{
+    background-color: aquamarine;
+    margin: 5%;
+}
+
+.container{
+    background-color: green;
+    padding:5%;
+    border-radius: 5%;
+}
+
+#farmers{
+    text-align: justify;
+    justify-content:space-evenly ;
+    
+}
+
+#marketTrendsChart img {
+    max-width: 100%;
+    border-radius: 1em;
+    box-shadow: 0 0 10px gray;
+}
+#productReviews {
+    background: white;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 8px gray;
+    max-width: 400px;
+    margin: auto;
+}
+
+.dark-mode body {
+    background-color: #181a1b;
+    color: #eafaf1;
+}
+.dark-mode .container {
+    background-color: #222e22;
+    color: #eafaf1;
+}
+.dark-mode #productReviews {
+    background: #23272a;
+    color: #b6e7c9;
+    box-shadow: 0 0 8px #222;
+}
+.dark-mode #marketTrendsChart img {
+    box-shadow: 0 0 10px #222;
+}

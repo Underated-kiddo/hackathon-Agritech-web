@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="services.css">
+    <title>Services</title>
+</head>
+<body>
+    <script src="darkmode-loader.js"></script>
+    <h3>Farm Tech Soln</h3>
+    <hr>
+    <div class="container">
+        <div id="navbar">
+            <a href="#" id="farmerServicesBtn">Farmer's Services</a>
+            <a href="#" id="buyerServicesBtn">Local markets & Buyers Services</a>
+        </div>
+    </div>
+<br><br>
+    <div class="container">
+        <div id="Farmers">
+            <h3><u>Farmers corner</u></h3> 
+            <h4>Market trends</h4>
+            <div id="marketTrendsChart">
+                <img src="images/static_buyer_trends.png" alt="Market Trends Chart" style="max-width:100%;border-radius:1em;box-shadow:0 0 10px gray;">
+            </div>
+            <div id="marketPrices" class="market-prices"></div>
+            <div id="marketPricesImg" style="text-align:center;margin:1em 0;">
+                <img src="images/market_prices_table.png" alt="Market Prices Table" style="max-width:100%;border-radius:1em;box-shadow:0 0 10px gray;">
+            </div>
+            <button id="addProductBtn">Add Products</button>
+            <h4>Farming tips</h4>
+            <button id="farmerOrderBtn">Order</button>
+            <h4>Product Reviews</h4>
+            <div id="productReviews">
+                <!-- Reviews will be loaded here -->
+            </div>
+            <h4>Your Products</h4>
+            <div id="myProducts">
+                <!-- Products will be loaded here with edit/delete options -->
+            </div>
+            <h4>Leave a Review</h4>
+            <form id="reviewForm">
+                <label for="reviewProduct">Product:</label>
+                <input type="text" id="reviewProduct" name="reviewProduct" required>
+                <label for="reviewRating">Rating:</label>
+                <select id="reviewRating" name="reviewRating" required>
+                    <option value="">--Select--</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+                <label for="reviewComment">Comment:</label>
+                <input type="text" id="reviewComment" name="reviewComment" required>
+                <button type="submit">Submit Review</button>
+            </form>
+            <div id="reviewMsg"></div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <div id="Buyers">
+            <h3><u>Buyers and local markets corner</u></h3>
+            <h4>Market trends</h4>
+            <div id="farmerTrendsChart" style="text-align:center;margin-bottom:1em;">
+                <img src="images/static_farmer_trends.png" alt="Farmer Trends Chart" style="max-width:100%;border-radius:1em;box-shadow:0 0 10px gray;">
+            </div>
+            <button id="buyerOrderBtn">Order</button>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="analytics-filters" style="background:white;padding:1em;border-radius:1em;box-shadow:0 0 8px gray;margin-bottom:1em;">
+        <h4>Analytics Filters</h4>
+        <form id="analyticsFilterForm">
+            <label for="analyticsDate">Date:</label>
+            <input type="date" id="analyticsDate" name="analyticsDate">
+            <label for="analyticsProduct">Product:</label>
+            <input type="text" id="analyticsProduct" name="analyticsProduct" placeholder="e.g. Maize">
+            <label for="analyticsLocation">Location:</label>
+            <input type="text" id="analyticsLocation" name="analyticsLocation" placeholder="e.g. Nairobi">
+            <button type="submit">Apply Filters</button>
+        </form>
+    </div>
+    
+    <hr>
+    <div class="footer">
+        copyrights
+    </div>
+    <script src="services.js"></script>
+</body>
+</html>

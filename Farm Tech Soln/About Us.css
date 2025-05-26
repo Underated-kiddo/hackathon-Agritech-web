@@ -1,0 +1,57 @@
+body {
+    background-color: aquamarine;
+    text-align: justify;
+}
+
+.main {
+    text-align: center;
+}
+
+.Contact {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+nav {
+    background-color: green;
+    padding: 1em;
+    text-align: center;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: brown;
+    color: white;
+}
+
+.dark-mode body {
+    background-color: #181a1b;
+    color: #eafaf1;
+}
+.dark-mode .main, .dark-mode .Contact, .dark-mode .footer {
+    background-color: #222e22;
+    color: #eafaf1;
+}
+.dark-mode nav {
+    background-color: #222e22;
+}
+.dark-mode nav a {
+    color: #eafaf1;
+}
+.dark-mode nav a:hover {
+    background-color: #3a1a1a;
+    color: #eafaf1;
+}

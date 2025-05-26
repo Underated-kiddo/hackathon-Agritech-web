@@ -1,0 +1,65 @@
+Farm Tech Platform Documentation
+===============================
+
+**Status:** Project in Progress (Not Yet Complete)
+
+---
+
+## Table of Contents
+1. Introduction
+2. Features
+3. User Roles & Dashboards
+4. Project Structure
+5. Setup & Installation
+6. API Overview (Planned)
+7. Accessibility & Dark Mode
+8. Future Work
+
+---
+
+### 1. Introduction
+Farm Tech Platform is a web application designed to connect farmers, buyers, local markets, and administrators. It provides tools for product management, analytics, order tracking, reviews, notifications, and more, with a focus on accessibility and modern UX.
+
+### 2. Features
+- Role-based dashboards (Farmer, Buyer/Local Market, Admin)
+- Product management (add, edit, delete, image upload)
+- Order management and tracking
+- Reviews and ratings
+- Real-time notifications
+- Analytics dashboard with filters
+- Global dark mode and accessibility
+- Admin tools for monitoring, reports, and user management
+
+### 3. User Roles & Dashboards
+- **Farmer:** Product management, sales analytics, order tracking
+- **Buyer/Local Market:** Product search, order history, market analytics
+- **Admin:** Access to all dashboards, user reviews, reports, and monitoring
+
+### 4. Project Structure
+- `Farm Tech Soln/` — Frontend (HTML, CSS, JS)
+- `farmtech_backend/` — Django backend (models, migrations, settings, etc.)
+
+### 5. Setup & Installation
+#### Frontend
+- Open `Farm Tech Soln/` in your browser or with Live Server.
+- Use dashboards according to your role.
+
+#### Backend
+- Install Python 3.8+, Django, Django REST Framework, and MySQL client.
+- Configure MySQL in `farmtech_backend/settings.py`.
+- Run migrations: `python manage.py makemigrations && python manage.py migrate`
+- Start the server: `python manage.py runserver`
+
+### 6. API Overview (Planned)
+- RESTful endpoints for authentication, products, orders, reviews, notifications, and admin features.
+- JWT or session-based authentication.
+
+### 7. Accessibility & Dark Mode
+- All pages support dark mode via `.dark-mode` class and `darkmode-loader.js`.
+- ARIA labels, color contrast, and focus styles for accessibility.
+
+### 8. Future Work
+- Complete backend API integration
+- Advanced admin features (reporting, moderation)
+- Production deployment and security hardening
+- Automated testing and CI/CD

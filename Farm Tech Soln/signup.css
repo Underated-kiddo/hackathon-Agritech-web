@@ -1,0 +1,79 @@
+.header {
+    background-color: green;
+    padding: 5%;
+    margin: 5%;
+}
+
+.container {
+    background-color: green;
+    padding: 5%;
+    margin: 5%;
+    text-align: center;
+    border-radius: 3%;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+/* Signup form specific styles */
+#form label,
+#form input,
+#form button,
+#form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+#form input,
+#form select {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid green;
+}
+
+#form button {
+    background: brown;
+    color: white;
+    border: none;
+    padding: 0.7em 2em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form button:hover {
+    background: green;
+}
+
+.footer {
+    background-color: green;
+    padding: 5%;
+    margin: 5%;
+    border-color: black;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.dark-mode body {
+    background-color: #181a1b;
+    color: #eafaf1;
+}
+.dark-mode .header, .dark-mode .container, .dark-mode .footer {
+    background-color: #222e22 !important;
+    color: #eafaf1 !important;
+}
+.dark-mode #form input, .dark-mode #form select {
+    background: #23272a;
+    color: #eafaf1;
+    border: 1px solid #b6e7c9;
+}
+.dark-mode #form button {
+    background: #3a1a1a;
+    color: #eafaf1;
+}
+.dark-mode #form button:hover {
+    background: #176317;
+}
