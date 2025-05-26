@@ -1,0 +1,38 @@
+# README.md
+
+## Project Status
+This project is currently a work in progress. Not all features are implemented, and the project is not yet complete.
+
+## Documentation
+Further documentation for the project can be found in `documentation.docx`.
+
+# Requests and Notes
+
+// Request: Create a README.md stating the project is not yet done and add documentation.docx
+Could you please come up with a readme.md but make sure you include that the project 
+isn't done yet then also add a documentation for the project in a documentation.docx
+
+// Request: Show Python-generated image and JSON results on services page (farmer section only)
+i wanted the python generated image to be pasted in the services page but only on the farmers corner to tell them 
+about the market trends also the json file the results to be displayed on the services page under farmers corner
+is it possible
+
+// Note: Use Django and MySQL for backend, implement all suggestions
+with regards to what you've suggested i would like us to do each and everything but keep in mind im using mysql as my backend and i would like us to use django for the backend
+
+// Request: Carefully implement all suggestions, then create MySQL backend
+kindly go through each and every suggestion and add them carefully then afterwards we can now create the mysql backend
+
+// Request: Make dark mode toggle global for the whole project
+i would like it if the dark mode toggling in settings could also affect the whole project if its dark mode then its dark and if it is light then its light
+
+// Question: Should login redirect to the correct dashboard by role?
+the question is when someone logs in like a farmer will they get the farmer dash board and if its a local market or buyer will they get a different dashboard from the farmer
+
+// Request: Restrict dashboard access to only the user's role
+i was thinking that the dashboard only shows the user in it and does'nt let the user see the other one in this way
+only the farmer accesses the farmers dashboard and the buyer/local market access the buyers dashboard just like that
+
+// Request: Add admin dashboard/role with review and monitoring features
+could you add one more dashboard and role
+one for an admin so that when they log in the can read users reviews and have access to both farmer and buyer/local market dashboards , they can also read reports reviews and monitor that none of the users are exploiting or using the site wrongfully
